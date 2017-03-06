@@ -7,9 +7,7 @@
     </head>
     <body>
 
-        <p>
-        	The about page
-        </p>
+        <p> {{ $test->info }} </p>
 
     </body>
 </html>

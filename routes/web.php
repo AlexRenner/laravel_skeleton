@@ -25,6 +25,20 @@ Route::get('/', function () {
   return view('welcome', compact('name', 'age', 'phpinfo', 'tests'));
 });
 
+Route::get('/tests', function () {
+
+	$tests = DB::table('tests')->get();
+
+  return view('tests.index', compact('tests'));
+});
+
+Route::get('/tests/{id}', function ($id) {
+
+	$test = DB::table('tests')->find($id);
+
+  return view('tests.show', compact('test'));
+});
+
 
 Route::get('/about', function () {
 	return view('about');
