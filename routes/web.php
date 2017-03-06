@@ -16,11 +16,13 @@ Route::get('/', function () {
 	$age = 30;
 	$phpinfo = [
 		'This is php iteration',
-		'The first is traditional php call',
+		'The first list is traditional php call',
 		'The second is blade.php call'
 	];
 
-  return view('welcome', compact('name', 'age', 'phpinfo'));
+	$tests = DB::table('tests')->get();
+
+  return view('welcome', compact('name', 'age', 'phpinfo', 'tests'));
 });
 
 

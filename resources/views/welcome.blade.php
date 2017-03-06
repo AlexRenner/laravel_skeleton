@@ -16,8 +16,8 @@
         </ul>
 
         <ul>
-            @foreach ($phpinfo as $info)
-                <li>{{ $info }}</li>
+            @foreach ($tests as $test)
+                <li>{{ $test->info }}</li>
             @endforeach
         </ul>
 
