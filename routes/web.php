@@ -12,7 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	$name = 'Alex';
+	$age = 30;
+	$phpinfo = [
+		'This is php iteration',
+		'The first is traditional php call',
+		'The second is blade.php call'
+	];
+
+  return view('welcome', compact('name', 'age', 'phpinfo'));
 });
 
 
