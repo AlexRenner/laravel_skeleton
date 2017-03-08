@@ -27,7 +27,8 @@ Route::get('/', function () {
 
 Route::get('/tests', function () {
 
-	$tests = DB::table('tests')->get();
+	// $tests = DB::table('tests')->get();    This is the same as next line
+	$tests = App\Test::all();  // Like ActiveRecord query but in Eloquent
 
   return view('tests.index', compact('tests'));
 });
