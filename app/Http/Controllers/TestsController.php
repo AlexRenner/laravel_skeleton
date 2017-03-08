@@ -16,8 +16,11 @@ class TestsController extends Controller
 		  return view('tests.index', compact('tests'));
     }
 
-    public function show($id) {
-			$test = DB::table('tests')->find($id);
+    public function show(Test $test) { // This works as $test = Test::find(wildCard);
+			// Which takes the place of having to query it manually
+			// $test = DB::table('tests')->find($id);   (Manual Query)
+
+			// dd($test);
 
 		  return view('tests.show', compact('test'));
     }
