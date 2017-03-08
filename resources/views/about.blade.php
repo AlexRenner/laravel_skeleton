@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="{{ config('app.locale') }}">
     <head>
+        
         <title> </title>
+
     </head>
     <body>
 
         <div>
-            My First Laravel Page
+            About Me
         </div>
 
     </body>
