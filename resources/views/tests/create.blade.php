@@ -2,6 +2,6 @@
 
 @section ('content')
 
-  <p> {{ $test->info }} </p>
+	<h1 class="blog-post-title">Create test item</h1>
 
 @endsection

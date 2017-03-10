@@ -24,4 +24,8 @@ class TestsController extends Controller
 
 		  return view('tests.show', compact('test'));
     }
+
+    public function create() {
+    	return view('tests.create');
+    }
 }

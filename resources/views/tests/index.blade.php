@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        
-        <title> </title>
+@extends ('layout')
 
-    </head>
-    <body>
+@section ('content')
 
         <ul>
             @foreach ($tests as $test)
@@ -13,5 +8,9 @@
             @endforeach
         </ul>
 
-    </body>
-</html>
+  <nav class="blog-pagination">
+    <a class="btn btn-outline-primary" href="#">Older</a>
+    <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
+  </nav>
+
+@endsection

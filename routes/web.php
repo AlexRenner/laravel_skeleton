@@ -25,9 +25,6 @@ Route::get('/', function () {
   return view('welcome', compact('name', 'age', 'phpinfo', 'tests'));
 });
 
-Route::get('/about', function () {
-	return view('about');
-});
-
 Route::get('/tests', 'TestsController@index');
 Route::get('/tests/{test}', 'TestsController@show');
+Route::get('/tests/create', 'TestsController@create');
